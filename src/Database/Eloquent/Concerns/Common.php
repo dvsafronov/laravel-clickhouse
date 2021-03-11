@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Database\Eloquent\Concerns;
+namespace DVSafronov\LaravelClickHouse\Database\Eloquent\Concerns;
 
 trait Common
 {

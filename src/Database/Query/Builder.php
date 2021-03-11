@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Database\Query;
+namespace DVSafronov\LaravelClickHouse\Database\Query;
 
-use Bavix\LaravelClickHouse\Database\Connection;
+use DVSafronov\LaravelClickHouse\Database\Connection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
@@ -88,6 +88,18 @@ class Builder extends BaseBuilder
     public function newQuery(): self
     {
         return new static($this->connection, $this->grammar);
+    }
+
+    /**
+     * Performs ALTER TABLE `table` DELETE query.
+     *
+     * @throws \Tinderbox\ClickhouseBuilder\Exceptions\GrammarException
+     *
+     * @return int
+     */
+    public function delete()
+    {
+        return $this->connection->delete($this->grammar->compileDelete($this));
     }
 
     /**

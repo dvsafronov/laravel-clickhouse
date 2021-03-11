@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Database\Query;
+namespace DVSafronov\LaravelClickHouse\Database\Query;
 
 class Pdo
 {
