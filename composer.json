@@ -1,5 +1,5 @@
 {
-  "name": "bavix/laravel-clickhouse",
+  "name": "dvsafronov/laravel-clickhouse",
   "description": "Eloquent model for ClickHouse",
   "type": "library",
   "license": "MIT",
@@ -22,18 +22,18 @@
   },
   "autoload": {
     "psr-4": {
-      "Bavix\\LaravelClickHouse\\": "src/"
+      "DVSafronov\\LaravelClickHouse\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bavix\\LaravelClickHouse\\Tests\\": "tests/"
+      "DVSafronov\\LaravelClickHouse\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Bavix\\LaravelClickHouse\\ClickHouseServiceProvider"
+        "DVSafronov\\LaravelClickHouse\\ClickHouseServiceProvider"
       ]
     }
   },

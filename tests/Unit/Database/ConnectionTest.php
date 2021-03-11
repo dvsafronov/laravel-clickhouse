@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Tests\Unit\Database;
+namespace DVSafronov\LaravelClickHouse\Tests\Unit\Database;
 
-use Bavix\LaravelClickHouse\Database\Connection;
-use Bavix\LaravelClickHouse\Database\Query\Builder;
+use DVSafronov\LaravelClickHouse\Database\Connection;
+use DVSafronov\LaravelClickHouse\Database\Query\Builder;
 use PHPUnit\Framework\TestCase;
 use Tinderbox\Clickhouse\Exceptions\ClientException;
 
