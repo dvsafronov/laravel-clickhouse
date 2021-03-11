@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace DVSafronov\LaravelClickHouse\Database\Query;
 
-use DVSafronov\LaravelClickHouse\Database\Connection;
+use Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
@@ -21,7 +21,7 @@ class Builder extends BaseBuilder
     protected $connection;
 
     public function __construct(
-        $connection,
+        Connection $connection,
         Grammar $grammar
     ) {
         $this->connection = $connection;
